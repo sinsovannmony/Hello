@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Chettan|Lobster|Pacifico" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script type="text/javascript">
+		function add()
+		{
+		   var x=document.getElementById("a").value;
+		   var y=document.getElementById("b").value;
+		   x=parseInt(x);
+		   y=parseInt(y);
+		   document.getElementById("c").innerHTML="Add:" +(x+y);
+		}
+		function sub()
+		{
+		   var x=document.getElementById("a").value;
+		   var y=document.getElementById("b").value;
+		   x=parseInt(x);
+		   y=parseInt(y);
+		   document.getElementById("c").innerHTML="Sub:" +(x-y);
+		}
+		function mul()
+		{
+		   var x=document.getElementById("a").value;
+		   var y=document.getElementById("b").value;
+		   x=parseInt(x);
+		   y=parseInt(y);
+		   document.getElementById("c").innerHTML="Mul:" +(x*y);
+		}
+		function div()
+		{
+		   var x=document.getElementById("a").value;
+		   var y=document.getElementById("b").value;
+		   x=parseInt(x);
+		   y=parseInt(y);
+		   document.getElementById("c").innerHTML="Div:" +(x/y);
+		}
+	</script>
+</head>
+<body>
+	<div class="icon">
+	<i class="fas fa-calculator fa-4x fa-spin"></i>
+    </div>
+    <div class="icon1">
+	<i class="fas fa-calculator fa-4x fa-spin"></i>
+    </div>
+	<p class="A1">Calculator</p>
+	<div class="A2"></div>
+	<input class="A3" type="text" id="a" placeholder="Enter the value">
+    <input class="A4" type="text" id="b" placeholder="Enter the value">
+    <button onclick="add()" class="A5">+</button>
+    <button onclick="sub()" class="A6">-</button>
+    <button onclick="mul()" class="A7">*</button>
+    <button onclick="div()" class="A8">/</button>
+    <div class="A9" id="c">Result:</div>
+</body>
+</html>
